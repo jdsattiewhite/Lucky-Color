@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Your Lucky Color</title>
+    <script language="JavaScript" type="text/javascript"> 
+function getLuckyInfo() {
+    colors = new Array(7);
+    colors[0] = "lightpink";
+    colors[1] = "orange";
+    colors[2] = "yellow";
+    colors[3] = "lightgreen";
+    colors[4] = "lightblue";
+    colors[5] = "violet";
+    colors[6] = "white";
+//Calculate a random number between 0 and the number of elements
+//in the colors array
+
+    i = Math.floor((Math.random() * 7) + 0); 
+    document.write("<p style='background-color: " + colors[i] + "'> Your lucky color is " + colors[i] + "</p>");
+
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="luckyinfo"> <script language="JavaScript" type="text/javascript">
+getLuckyInfo();
+</script>
+
+</body>
+</html>
